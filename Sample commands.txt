@@ -1,0 +1,46 @@
+//Convert Boolean to String
+Boolean theBool = true;
+String theString = (theBool) ? 'true' : 'false';
+public static String wrapSingleQuotes(Boolean input) {
+    return (input == null) ? '' : '\'' + String.valueOf(input) + '\'';
+}
+
+//List initialization
+String[] entityList = new String []{'CEO','CFO','CMO','CTO','CIO','COO','VP','DIRECTOR','VIP'};
+
+//Query builder
+Boolean first = true;
+query = 'Select Id FROM CONTACT';
+for(String el : entityList){
+    if(!first){
+        query += ' OR';
+    } else {
+        query += ' WHERE';
+    }
+    query = query + ' name LIKE \'%' + el + '%\'';
+    first = false;
+}
+[String query='select column_name from information_schema.COLUMNS where table_name =\''+ String.escapeSingleQuotes(selectedValue1)+'\'';]
+
+//SLDS
+.slds-hidden {visibility:hidden}
+.slds-visible {visibility:visible}
+.slds-hide {display:none}
+.slds-show {display:block}
+
+$A.Util.toggleClass()
+$A.Util.addClass()
+$A.Util.removeClass()
+
+applyCSS: function(cmp, event) {
+    var cmpTarget = cmp.find('changeIt');
+    $A.util.addClass(cmpTarget, 'changeMe');
+},
+
+removeCSS: function(cmp, event) {
+    var cmpTarget = cmp.find('changeIt');
+    $A.util.removeClass(cmpTarget, 'changeMe');
+}
+
+
+//
