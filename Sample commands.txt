@@ -43,4 +43,24 @@ removeCSS: function(cmp, event) {
 }
 
 
-//
+//List iteration
+List<Id> soid = new List<Id> {'a390b000009R0aRAAS', 'a390b000009S37DAAS'};
+List<Sales_Order__c> solist = [SELECT Id, General_Activity__c from Sales_Order__c where id IN :soid];
+for(Sales_Order__c so: solist) {
+    //so.General_Activity__c = 'Sales Incomplete';
+    so.General_Activity__c = 'New';
+}
+update solist;
+
+//Sample queries
+set<Id> TerritoryIdSet = new set<Id>();
+for (UserTerritory ut:UserTerritoryCurrentUserMap.values()) {
+    TerritoryIdSet.add(ut.TerritoryId);
+}
+list<Group> map_group = [Select Id, RelatedId from Group where Type='Territory' AND RelatedId IN : TerritoryIdSet];
+List<AccountShare> lst_AccountShare = [Select Id, UserOrGroupId, AccountId from AccountShare where ( UserOrGroupId IN : map_group OR  UserOrGroupId =:userId )AND RowCause IN ('Territory', 'TerritoryManual', 'TerritoryRule')];
+
+//Tips
+To query the multi select picklist where Bank AND Agriculture are selected use the clause WHERE Multi_Select__c INCLUDES ('Bank;Agriculture')
+To query Bank OR Agriculture as selected use the clause WHERE Multi_Select__c INCLUDES ('Bank', 'Agriculture')
+Map<Id,UserTerritory> UserTerritoryCurrentUserMap = new  Map<Id,UserTerritory>([Select u.UserId, u.TerritoryId, u.IsActive, u.Id  From UserTerritory u Where u.isActive=true and u.userId =: userId]);
