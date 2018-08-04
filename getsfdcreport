@@ -1,0 +1,38 @@
+from simple_salesforce import Salesforce
+import requests
+import shutil, os
+import csv
+
+print('---- Job Started ----')
+
+if os.path.exists(os.getcwd() + '/report.csv'):
+    print('Deleting previous file')
+    os.remove(os.getcwd() + '/report.csv')
+
+sf = Salesforce(username='',
+                password='',
+                security_token='')
+
+print('Connection successful')
+# print("sid ", sf.session_id)
+
+response = requests.get("",
+                  		headers = sf.headers, 
+                  		cookies = {'sid' : sf.session_id})
+
+print('Response received')
+# res = response.content
+if response.status_code == 200:
+    with open('report.csv', 'wb') as out_file:
+        out_file.write(response.content)
+
+    '''
+    rdata = response.content.decode('utf-8')
+    cr = csv.reader(rdata.splitlines(), delimiter=',')
+    my_list = list(cr)
+    for row in my_list:
+        print(row)
+    '''
+
+print('Saved report in folder, ', os.getcwd())
+print('---- Job done. ----')
