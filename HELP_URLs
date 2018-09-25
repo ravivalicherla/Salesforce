@@ -1,0 +1,37 @@
+LEX COMPONENTS - https://developer.salesforce.com/docs/component-library/overview/components
+LEX EVENTS - https://developer.salesforce.com/blogs/developer-relations/2017/04/lightning-inter-component-communication-patterns.html
+             https://developer.salesforce.com/blogs/developer-relations/2015/03/lightning-component-framework-custom-events.html
+LEX DATA BINDING - https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/expr_data_binding.htm
+LEX EVENTS - https://sfdcpanther.wordpress.com/2018/01/05/call-child-component-controller-from-parent-component-aura-method/
+LEX DESGIN ATTRIBUTE - https://developer.salesforce.com/blogs/developer-relations/2017/06/create-admin-friendly-lightning-components.html
+
+SFDC BOT - https://developer.salesforce.com/blogs/developer-relations/2017/03/bot-toolkit-creating-deploying-bots-inside-salesforce.html
+SFDC BOT - https://tutorials.botsfloor.com/creating-a-simple-chatbot-in-salesforce-lightning-using-api-ai-in-less-than-60-mins-4dd79777b246
+SFDC ASYNCHRONUS TYPES - http://www.salesforcenextgen.com/asynchronous-apex/
+SFDC YOUTUBE - https://www.youtube.com/watch?v=ICm3NpRHRdU - Effective Sandbox Design
+               https://www.youtube.com/watch?v=I675J5SjRvM - Record Types (Salesforce Classic)
+               
+SFDC BLOGS - https://blogs.absyz.com/2017/07/13/workaround-for-pdf-rendering-in-sf1/
+             http://www.sfdcpanda.com/no-apex-lightning-components/
+             http://www.infallibletechie.com/2018/08/salesforce-interview-questions-with.html
+             http://www.infallibletechie.com/2018/02/forcenavigatetourl-example-in.html
+             http://www.infallibletechie.com/2013/08/storing-values-in-multi-select-picklist.html
+             http://www.infallibletechie.com/2013/05/visualforce-email-template-with-custom.html
+             http://www.infallibletechie.com/2013/01/pagination-using-apex-in-salesforce.html
+             http://www.infallibletechie.com/2017/08/simple-outbound-rest-api-with-json.html
+             http://www.infallibletechie.com/2018/04/agetcallback-usage-for-polling-in.html
+
+GOOGLE COURSE - https://qwiklabs.com/quests/29?locale=en
+KUBERNETES - https://www.katacoda.com/courses/kubernetes/getting-started-with-kubeadm
+CLOUD ACADEMY - https://cloudacademy.com/blog/8-hands-on-labs-to-master-docker-in-the-enterprise/
+IBM - https://courses.cognitiveclass.ai
+      https://www.youtube.com/watch?v=SeBaUXn-Wnw - BLOCKCHAIN TO-DO LIST
+      https://www.youtube.com/watch?v=pr4Hb0jb0lo - LINUX FOUNDATION HYPERLEDGER
+      https://developer.ibm.com/patterns/create-a-to-do-list-app-using-blockchain/
+      https://composer-playground.mybluemix.net/editor
+
+HYPERLEDGER FABRIC - https://hyperledger.github.io/composer/v0.19/introduction/introduction
+                     https://hyperledger-fabric.readthedocs.io/en/release-1.2/write_first_app.html
+                     
+PYTHON - https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
+         
